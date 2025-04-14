@@ -54,7 +54,7 @@ void lorenz_rk4(double *x, double *y, double *z, double h, int steps, FILE *data
 int main() {
     double x = 1.0, y = 1.0, z = 1.0;
     double h = 0.01;
-    int steps = 10000; // More steps for a better visualization
+    int steps = 10000;
     
     FILE *datafile = fopen("lorenz_data.dat", "w");
     if (datafile == NULL) {
